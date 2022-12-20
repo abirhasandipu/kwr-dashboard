@@ -18,8 +18,8 @@
     <!-- main body div -->
     <div class="flex w-screen bg-gray-50">
         <!-- sidebar -->
-        <div class="fixed h-screen w-64 flex flex-col bg-white text-gray-500">
-            <img class="mx-5 my-3" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+        <div class="sticky top-0 h-screen w-64 flex flex-col bg-white shadow text-gray-500">
+            <img class="mx-10 mt-8" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
 
             <ul class="flex flex-col mt-10">
                 <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
@@ -65,15 +65,34 @@
             <div class=" flex">
                 <!-- banner and features -->
                 <div class="w-full">
-                    <div class="bg-gray-50 p-2">
-                        <div class="bg-white rounded-lg shadow-sm p-5 flex flex-col gap-4">
-                            <h1 class="text-3xl">Hello, Dipu!</h1>
-                            <p class="text-gray-500 text-sm font-light w-[50%]">Lorem ipsum dolor sit amet consectetur
+                    <!-- header, search and notifications -->
+                    <div class="flex justify-between items-center mx-8 mt-3">
+                        <!-- search -->
+                        <div>
+                            <input class="w-96 shadow px-5 py-2 rounded-full" type="text" name=""
+                                placeholder="Search..." id="">
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <div class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center">
+                                <i class="text-gray-600 text-xl fa-solid fa-comments"></i>
+                            </div>
+                            <div class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center">
+                                <i class="text-gray-600 text-xl fa-solid fa-bell"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- banner -->
+                    <div class="bg-gray-50 ">
+                        <div class="bg-white rounded-lg shadow pl-10 py-5 flex flex-col mx-8 mt-4">
+                            <h1 class="text-3xl mb-2">Hello, Dipu!</h1>
+                            <p class="text-gray-500 text-sm font-light w-[50%] mb-8">Lorem ipsum dolor sit amet
+                                consectetur
                                 adipisicing elit.
                                 Aliquid
                                 animi tempora
                                 perspiciatis libero ipsam saepe tempore quas, provident eveniet eum.</p>
-                            <a class="bg-kwr-red text-white py-2 px-4 rounded w-fit text-xs" href="#">Click here</a>
+                            <a class="bg-kwr-red hover:bg-red-600 transition-all ease-in-out text-white py-2 px-4 rounded w-fit text-xs"
+                                href="#">Click here</a>
                         </div>
                     </div>
 
@@ -82,12 +101,13 @@
                         <h3 class="mb-5 text-gray-600">Features</h3>
 
                         <!-- Cards -->
-                        <div class="grid grid-cols-3 gap-y-16 gap-x-8">
+                        <div class="grid grid-cols-3 gap-y-12 gap-x-7">
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-xl text-white fa-solid fa-arrow-trend-up"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -96,10 +116,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-stairs"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -108,10 +129,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-rocket"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -120,10 +142,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-flag"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -132,10 +155,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-forward"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -144,10 +168,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-key"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -156,10 +181,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-gauge-simple-high"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -168,10 +194,11 @@
                                     ex?</p>
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
-                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
-                                    Icon</div>
+                                    class="absolute right-5 -top-5 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-12 w-12 rounded-lg flex justify-center items-center text-white">
+                                    <i class="text-white text-xl fa-solid fa-car-on"></i>
+                                </div>
                                 <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
                                 <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
                                     adipisicing
@@ -184,7 +211,76 @@
                     </div>
                 </div>
                 <!-- profile info -->
-                <div class="w-96 bg-green-300">prfile and info</div>
+                <div class="w-96 h-fit">
+                    <div class="flex flex-col shadow rounded-l mt-3 mr-3 bg-white gap-10 px-5 py-5 justify-between">
+                        <div class="flex gap-14 items-center">
+                            <div class="">
+                                <h3 class="text-xl">Dipu</h3>
+                                <p class="text-gray-500 text-sm">Super Admin</p>
+                            </div>
+                            <div class="">
+                                <img class="h-10 w-10 object-cover rounded-full"
+                                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Credits and subs -->
+                        <div class="flex justify-between">
+                            <div>
+                                <H4 class="font-semibold text-gray-400">Credits</H4>
+                                <H4 class="font-bold text-gray-500 flex items-center gap-2"><i
+                                        class="text-kwr-orange text-2xl fa-solid fa-dollar-sign"></i>
+                                    43,546</H4>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-400">Subscriptions</h4>
+                                <div>
+                                    <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
+                                    <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="grid grid-cols-2">
+                            <div class="col-span-1 mt-3">
+                                <h3 class="mb-2 text-gray-400 font-semibold">Running</h3>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-8 w-1 bg-[#FFA1A1]"></div>
+                                    <h2 class="text-xl">12</h2>
+                                </div>
+                            </div>
+                            <div class="col-span-1 mt-3">
+                                <h3 class="mb-2 text-gray-400 font-semibold">Completed</h3>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-8 w-1 bg-[#BFFFA1]"></div>
+                                    <h2 class="text-xl">5</h2>
+                                </div>
+                            </div>
+                            <div class="col-span-1 mt-3">
+                                <h3 class="mb-2 text-gray-400 font-semibold">Paused</h3>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-8 w-1 bg-[#FFEAA1]"></div>
+                                    <h2 class="text-xl">2</h2>
+                                </div>
+                            </div>
+                            <div class="col-span-1 mt-3">
+                                <h3 class="mb-2 text-gray-400 font-semibold">On Queue</h3>
+                                <div class="flex gap-2 items-center">
+                                    <div class="h-8 w-1 bg-[#F2A1FF]"></div>
+                                    <h2 class="text-xl">6</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Graph -->
+                    <div class="mr-3 border border-red-500 mt-10">
+                        <img class=""
+                            src="assets/DALL·E 2022-12-16 14.19.53 - cat smoking a cigar and holding a book.png" alt="">
+                    </div>
+                </div>
             </div>
             <!-- table -->
             <div class="h-96 w-full bg-red-500">
