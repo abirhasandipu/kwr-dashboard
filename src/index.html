@@ -6,10 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>KWRocket</title>
 </head>
 
 <body>
+    <!-- main body div -->
+    <div class="flex w-screen bg-gray-50">
+        <!-- sidebar -->
+        <div class="fixed h-screen w-64 flex flex-col bg-white text-gray-500">
+            <img class="mx-5 my-3" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+
+            <ul class="flex flex-col mt-10">
+                <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-laptop"></i>
+                    <li>Dashboard</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-flag"></i>
+                    <li>Campaigns</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-music"></i>
+                    <li>Lorem</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <li>Stats</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-ticket"></i>
+                    <li>Tickets</li>
+                </a>
+
+            </ul>
+            <div class="absolute bottom-8 px-5 flex flex-col gap-2">
+                <a class="flex items-center gap-3 hover:text-kwr-orange transition-all ease-in-out pl-5 py-3" href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange transition-all ease-in-out pl-5 py-3" href="">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                </a>
+            </div>
+        </div>
+        <!-- main body -->
+        <div class=" w-full">
+            <div class=" flex">
+                <!-- banner and features -->
+                <div class="w-full">
+                    <div class="bg-gray-50 p-2">
+                        <div class="bg-white rounded-lg shadow-sm p-5 flex flex-col gap-4">
+                            <h1 class="text-3xl">Hello, Dipu!</h1>
+                            <p class="text-gray-500 text-sm font-light w-[50%]">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Aliquid
+                                animi tempora
+                                perspiciatis libero ipsam saepe tempore quas, provident eveniet eum.</p>
+                            <a class="bg-kwr-red text-white py-2 px-4 rounded w-fit text-xs" href="#">Click here</a>
+                        </div>
+                    </div>
+
+                    <!-- features -->
+                    <div class="px-8 py-5">
+                        <h3 class="mb-5 text-gray-600">Features</h3>
+
+                        <!-- Cards -->
+                        <div class="grid grid-cols-3 gap-y-16 gap-x-8">
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+                            <div
+                                class="col-span-1 shadow bg-white rounded-lg py-5 px-3 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
+                                <div
+                                    class="absolute right-5 -top-8 bg-gradient-to-t from-kwr-red-77 to-kwr-orange-90 h-16 w-16 rounded-lg flex justify-center items-center text-white">
+                                    Icon</div>
+                                <h4 class="text-xl">Lorem ipsum sit amet dolor</h4>
+                                <p class="text-xs text-gray-500 w-[80%]">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                                    ex?</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- profile info -->
+                <div class="w-96 bg-green-300">prfile and info</div>
+            </div>
+            <!-- table -->
+            <div class="h-96 w-full bg-red-500">
+                table
+            </div>
+        </div>
+    </div>
 
 </body>
 
