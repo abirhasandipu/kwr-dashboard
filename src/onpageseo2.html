@@ -14,37 +14,41 @@
     <title>On-Page SEO Scores</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- main body div -->
-    <div class="flex w-screen bg-gray-50">
+    <div class="flex ">
         <!-- sidebar -->
-        <div class="sticky top-0 h-screen w-64 flex flex-col bg-white shadow text-gray-500">
-            <img class="mx-10 mt-8" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+        <div class="sticky top-0 h-screen w-60 flex flex-col bg-white shadow text-gray-500 shrink-0 small-laptop:w-14">
+            <div class="flex mt-8 gap-5 items-center justify-center">
+                <img class="h-8 small-laptop:hidden" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+                <button class="text-gray-400 small-laptop:rotate-180 mt-1"><i
+                        class="fa-solid fa-angles-left"></i></button>
+            </div>
             <ul class="flex flex-col mt-10">
                 <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-laptop"></i>
-                    <li>Dashboard</li>
+                    <li class="small-laptop:hidden">Dashboard</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-flag"></i>
-                    <li>Campaigns</li>
+                    <li class="small-laptop:hidden">Campaigns</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-music"></i>
-                    <li>Lorem</li>
+                    <li class="small-laptop:hidden">Lorem</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <li>Stats</li>
+                    <li class="small-laptop:hidden">Stats</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-ticket"></i>
-                    <li>Tickets</li>
+                    <li class="small-laptop:hidden">Tickets</li>
                 </a>
 
             </ul>
@@ -67,8 +71,8 @@
                     <div class="flex justify-between items-center mx-8 mt-3">
                         <!-- search -->
                         <div>
-                            <input class="w-96 shadow px-5 py-2 rounded-full" type="text" name=""
-                                placeholder="Search..." id="">
+                            <input class=" shadow px-5 py-2 rounded-full " type="text" name="" placeholder="Search..."
+                                id="">
                         </div>
                         <div class="flex gap-10">
                             <div class="flex items-center gap-3">
@@ -96,8 +100,9 @@
                     </div>
                     <!-- Campaign title and buttons -->
                     <div class="bg-gray-50">
-                        <div class="bg-white rounded-lg shadow px-10 py-5 flex justify-between items-center mx-8 mt-4">
-                            <h1 class="text-xl">https://abirhasandipu.com/</h1>
+                        <div
+                            class="bg-white rounded-lg shadow px-10 py-5 flex justify-between items-center tablet:flex-col tablet:items-start tablet:gap-3 mx-8 mt-4">
+                            <h1 class="text-xl break-all">https://abirhasandipu.com/</h1>
                             <div class="flex gap-3">
                                 <a class="bg-gray-100 border border-gray-200 hover:border-kwr-orange active:bg-gray-200 transition-all ease-in-out text-gray-600 py-2 px-4 rounded w-fit text-xs"
                                     href="#">Select Competitor</a>
@@ -116,23 +121,20 @@
 
                     <!-- Report Summary -->
                     <div class="px-8 py-5">
-                        <div class="grid grid-cols-4 gap-y-6 gap-x-5">
+                        <div class="grid grid-cols-6 gap-y-6 gap-x-5">
                             <div
-                                class="col-span-3 shadow bg-white rounded-lg py-10 px-6 grid grid-cols-6 gap-4 relative border border-white transition-all ease-in-out">
-                                <!-- Report pie chart -->
-                                <div class="flex col-span-3">
-                                    <div
-                                        class="h-32 w-32 text-xs bg-gray-300 rounded-full flex flex-col justify-center items-center">
-                                        <p class="text-base">Pie chart</p>
-                                        <p>42 errors</p>
-                                        <p>34 warnings</p>
-                                    </div>
-                                    <div class="ml-10">
-                                        <p class="text-sm text-gray-400">Page score for</p>
-                                        <h3 class="text-lg mb-5">https://abirhasandipu.com/</h3>
-                                        <a class="border border-kwr-orange text-kwr-orange rounded py-1 px-2 text-xs"
-                                            href="#">Some button</a>
-                                        <div class="mt-8">
+                                class="col-span-3 shadow bg-white rounded-lg py-10 px-6 grid grid-cols-6 gap-4 relative transition-all ease-in-out">
+                                <!-- Report -->
+                                <div class="col-span-3">
+
+                                    <div class="ml-5 flex gap-10">
+                                        <div class="shrink-0">
+                                            <p class="text-sm text-gray-400">Page score for</p>
+                                            <h3 class="text-lg mb-5 break-all">https://abirhasandipu.com/</h3>
+                                            <a class="border border-kwr-orange text-kwr-orange rounded py-1 px-2 text-xs"
+                                                href="#">Some button</a>
+                                        </div>
+                                        <div class="border-l pl-10">
                                             <p class="text-sm">Info</p>
                                             <div class="flex">
                                                 <div class="text-xs text-gray-600">
@@ -140,7 +142,7 @@
                                                     <p>Indexation</p>
                                                     <p>Page size</p>
                                                 </div>
-                                                <div class="text-xs ml-5 text-blue-400">
+                                                <div class="text-xs ml-10 text-blue-400">
                                                     <p>200 OK</p>
                                                     <p>Indexable</p>
                                                     <p>464.8 KB</p>
@@ -149,38 +151,38 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="h-full w-[1px] bg-gray-200"></div> -->
-                                <div class="col-span-3 border-l pl-5">
-                                    <div class="grid grid-cols-8 gap-4 items-center my-3">
-                                        <h5 class="col-span-1 text-lg text-red-500 font-semibold">43</h5>
-                                        <p class="text-sm col-span-1">Critical</p>
-                                        <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="grid grid-cols-8 gap-4 items-center my-3">
-                                        <h5 class="col-span-1 text-lg text-yellow-500 font-semibold">27</h5>
-                                        <p class="text-sm col-span-1">Warning</p>
-                                        <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-6 flex flex-col gap-4 relative border border-white transition-all ease-in-out">
-                                <h4 class="text-xl">Tasks</h4>
-                                <div class="w-full h-full flex justify-center items-center">
+                                class="col-span-2 shadow bg-white rounded-lg py-5 px-6 flex gap-5 items-center relative border-white transition-all ease-in-out">
+                                <div class="flex justify-center items-center">
                                     <div
-                                        class="flex justify-center items-center border-8 h-32 w-32 rounded-full border-kwr-orange">
+                                        class="flex justify-center items-center border-8 h-32 w-32 shrink-0 rounded-full border-kwr-orange">
                                         <p class="flex flex-col items-center justify-center text-lg text-gray-600">
-                                            54<span class="text-sm text-gray-400">tasks</span></p>
+                                            54<span class="text-sm text-gray-400">Tasks</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-3 pl-5 flex flex-col">
+                                    <div class="flex justify-center items-center gap-5 my-3">
+                                        <h5 class="text-lg text-kwr-red font-semibold">43</h5>
+                                        <p class="text-sm col-span-1">Critical</p>
+                                        <!-- <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="flex items-center justify-center gap-5 my-3">
+                                        <h5 class="col-span-1 text-lg text-yellow-500 font-semibold">27</h5>
+                                        <p class="text-sm col-span-1">Warning</p>
+                                        <!-- <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
+                                        </ul> -->
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +199,7 @@
                 <div class="gap-y-6 gap-x-5">
                     <div class="shadow bg-white rounded-lg flex flex-col gap-4 relative transition-all ease-in-out">
                         <div class="bg-blue-100 h-fit py-3 px-5 flex justify-end gap-5 rounded-t items-center">
-                            <a class="bg-kwr-orange text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
+                            <a class="bg-gray-300 text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
                                 href="#">On-Page SEO (My Site)</a>
                             <a class="bg-kwr-orange text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
                                 href="#">Check Comparison with ranking site</a>
@@ -207,12 +209,12 @@
                         <!-- comparison table -->
 
                         <div class="px-4 sm:px-6 lg:px-8">
-                            <!-- <div class="sm:flex sm:items-center">
+                            <div class="mb-4 sm:flex sm:items-center">
                                 <div class="sm:flex-auto">
-                                    <h1 class="text-xl font-semibold text-gray-600">If any title is required</h1>
+                                    <h1 class="text-xl font-semibold text-gray-600">Title goes here</h1>
                                 </div>
 
-                            </div> -->
+                            </div>
                             <div class="mt-0 mb-8 flex flex-col">
                                 <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                                     <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -297,16 +299,13 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
 
         </div>
     </div>
-    </div>
+
 
 </body>
 
