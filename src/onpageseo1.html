@@ -11,44 +11,48 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>On-Page SEO Scores</title>
+    <title>On-Page SEO Page 1</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- main body div -->
-    <div class="flex w-screen bg-gray-50">
+    <div class="flex w-screen">
         <!-- sidebar -->
-        <div class="sticky top-0 h-screen w-64 flex flex-col bg-white shadow text-gray-500">
-            <img class="mx-10 mt-8" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+        <div class="sticky top-0 h-screen w-60 flex flex-col bg-white shadow text-gray-500 shrink-0 small-laptop:w-14">
+            <div class="flex mt-8 gap-5 items-center justify-center">
+                <img class="h-8 small-laptop:hidden" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+                <button class="text-gray-400 small-laptop:rotate-180 mt-1"><i
+                        class="fa-solid fa-angles-left"></i></button>
+            </div>
             <ul class="flex flex-col mt-10">
                 <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-laptop"></i>
-                    <li>Dashboard</li>
+                    <li class="small-laptop:hidden">Dashboard</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-flag"></i>
-                    <li>Campaigns</li>
+                    <li class="small-laptop:hidden">Campaigns</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-music"></i>
-                    <li>Lorem</li>
+                    <li class="small-laptop:hidden">Lorem</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <li>Stats</li>
+                    <li class="small-laptop:hidden">Stats</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-ticket"></i>
-                    <li>Tickets</li>
+                    <li class="small-laptop:hidden">Tickets</li>
                 </a>
 
             </ul>
-            <div class="absolute bottom-8 px-5 flex flex-col gap-2">
+            <!-- <div class="absolute bottom-8 px-5 flex flex-col gap-2">
                 <a class="flex items-center gap-3 hover:text-kwr-orange transition-all ease-in-out pl-5 py-3" href="#">
                     <i class="fa-solid fa-gear"></i>
                     <p>Settings</p>
@@ -57,36 +61,36 @@
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <p>Logout</p>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!-- main body -->
         <div class=" w-full">
             <div class=" flex">
                 <div class="w-full">
                     <!-- header, search and notifications -->
-                    <div class="flex justify-between items-center mx-8 mt-3">
+                    <div class="flex justify-between items-center tablet::mx-2 mx-8 mt-3">
                         <!-- search -->
                         <div>
-                            <input class="w-96 shadow px-5 py-2 rounded-full" type="text" name=""
+                            <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
                                 placeholder="Search..." id="">
                         </div>
                         <div class="flex gap-10">
                             <div class="flex items-center gap-3">
                                 <a href="#"
-                                    class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
-                                    <i class="text-xl fa-solid fa-comments"></i>
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    <i class="text-xl tablet:text-base fa-solid fa-comments"></i>
                                 </a>
                                 <a href="#"
-                                    class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
                                     <i class="text-xl fa-solid fa-bell"></i>
                                 </a>
                             </div>
                             <div class="flex gap-5 items-center text-right">
-                                <div class="">
-                                    <h3 class="text-xl text-kwr-orange">Dipu</h3>
-                                    <p class="text-gray-500 text-sm">Super Admin</p>
+                                <div class="shrink-0">
+                                    <h3 class="text-xl text-kwr-orange tablet:text-base">Dipu</h3>
+                                    <p class="text-gray-500 text-sm tablet:text-xs">Super Admin</p>
                                 </div>
-                                <div class="">
+                                <div class="shrink-0">
                                     <img class="h-10 w-10 object-cover rounded-full"
                                         src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
                                         alt="">
@@ -96,7 +100,8 @@
                     </div>
                     <!-- Campaign title and buttons -->
                     <div class="bg-gray-50">
-                        <div class="bg-white rounded-lg shadow px-10 py-5 flex justify-between items-center mx-8 mt-4">
+                        <div
+                            class="bg-white rounded-lg shadow px-10 py-5 flex wide-tablet:flex-col wide-tablet:gap-5 justify-between items-center wide-tablet:items-start tablet:mx-2 mx-8 mt-4">
                             <h1 class="text-xl">https://abirhasandipu.com/</h1>
                             <div class="flex gap-3">
                                 <a class="bg-gray-100 border border-gray-200 hover:border-kwr-orange active:bg-gray-200 transition-all ease-in-out text-gray-600 py-2 px-4 rounded w-fit text-xs"
@@ -115,32 +120,28 @@
                     </div>
 
                     <!-- Report Summary -->
-                    <div class="px-8 py-5">
-                        <div class="grid grid-cols-4 gap-y-6 gap-x-5">
+                    <div class="px-8 tablet:px-2 py-5">
+                        <div class="grid grid-cols-6 gap-y-6 gap-x-5">
                             <div
-                                class="col-span-3 shadow bg-white rounded-lg py-10 px-6 grid grid-cols-6 gap-4 relative border border-white transition-all ease-in-out">
-                                <!-- Report pie chart -->
-                                <div class="flex col-span-3">
-                                    <div
-                                        class="h-32 w-32 text-xs bg-gray-300 rounded-full flex flex-col justify-center items-center">
-                                        <p class="text-base">Pie chart</p>
-                                        <p>42 errors</p>
-                                        <p>34 warnings</p>
-                                    </div>
-                                    <div class="ml-10">
-                                        <p class="text-sm text-gray-400">Page score for</p>
-                                        <h3 class="text-lg mb-5">https://abirhasandipu.com/</h3>
-                                        <a class="border border-kwr-orange text-kwr-orange rounded py-1 px-2 text-xs"
-                                            href="#">Some button</a>
-                                        <div class="mt-8">
-                                            <p class="text-sm">Info</p>
-                                            <div class="flex">
-                                                <div class="text-xs text-gray-600">
+                                class="col-span-3 wide-tablet:col-span-6 shadow bg-white rounded-lg py-10 px-6 grid grid-cols-6 gap-4 relative transition-all ease-in-out">
+                                <!-- Report -->
+                                <div class="col-span-3 laptop:col-span-6">
+                                    <div class="ml-5 flex laptop:flex-col gap-10">
+                                        <div class="shrink-0">
+                                            <p class="text-sm text-gray-400">Page score for</p>
+                                            <h3 class="text-lg mb-5 break-all">https://abirhasandipu.com/</h3>
+                                            <a class="border border-kwr-orange text-kwr-orange rounded py-1 px-2 text-xs"
+                                                href="#">Some button</a>
+                                        </div>
+                                        <div class="border-l laptop:border-l-0">
+                                            <p class="text-sm ml-10 laptop:ml-0">Info</p>
+                                            <div class="flex ml-10 laptop:ml-0">
+                                                <div class="text-xs text-gray-600 whitespace-nowrap">
                                                     <p>Status code</p>
                                                     <p>Indexation</p>
                                                     <p>Page size</p>
                                                 </div>
-                                                <div class="text-xs ml-5 text-blue-400">
+                                                <div class="text-xs ml-10 text-blue-400">
                                                     <p>200 OK</p>
                                                     <p>Indexable</p>
                                                     <p>464.8 KB</p>
@@ -149,38 +150,38 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="h-full w-[1px] bg-gray-200"></div> -->
-                                <div class="col-span-3 border-l pl-5">
-                                    <div class="grid grid-cols-8 gap-4 items-center my-3">
-                                        <h5 class="col-span-1 text-lg text-red-500 font-semibold">43</h5>
-                                        <p class="text-sm col-span-1">Critical</p>
-                                        <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="grid grid-cols-8 gap-4 items-center my-3">
-                                        <h5 class="col-span-1 text-lg text-yellow-500 font-semibold">27</h5>
-                                        <p class="text-sm col-span-1">Warning</p>
-                                        <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
-                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
                             <div
-                                class="col-span-1 shadow bg-white rounded-lg py-5 px-6 flex flex-col gap-4 relative border border-white transition-all ease-in-out">
-                                <h4 class="text-xl">Tasks</h4>
-                                <div class="w-full h-full flex justify-center items-center">
+                                class="col-span-3 wide-tablet:col-span-6 shadow bg-white rounded-lg py-5 px-6 flex gap-5 items-center relative border-white transition-all ease-in-out">
+                                <div class="flex justify-center items-center">
                                     <div
-                                        class="flex justify-center items-center border-8 h-32 w-32 rounded-full border-kwr-orange">
+                                        class="flex justify-center items-center border-8 h-32 w-32 shrink-0 rounded-full border-kwr-orange">
                                         <p class="flex flex-col items-center justify-center text-lg text-gray-600">
-                                            54<span class="text-sm text-gray-400">tasks</span></p>
+                                            54<span class="text-sm text-gray-400">Tasks</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-3 pl-5 flex flex-col">
+                                    <div class="flex justify-center items-center gap-5 my-3">
+                                        <h5 class="text-lg text-kwr-red font-semibold">43</h5>
+                                        <p class="text-sm col-span-1">Critical</p>
+                                        <!-- <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="flex items-center justify-center gap-5 my-3">
+                                        <h5 class="col-span-1 text-lg text-yellow-500 font-semibold">27</h5>
+                                        <p class="text-sm col-span-1">Warning</p>
+                                        <!-- <ul class="list-decimal text-xs text-gray-500 pl-10 col-span-6">
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolor sit.</li>
+                                            <li>Lorem, ipsum Lorem ipsum dolopsum dolor.</li>
+                                        </ul> -->
                                     </div>
                                 </div>
                             </div>
@@ -193,18 +194,20 @@
 
 
             <!-- Detailed Reports -->
-            <div class="px-8">
+            <div class="px-8 tablet:px-2 mb-10">
                 <div class="grid grid-cols-4 gap-y-6 gap-x-5">
                     <div
-                        class="col-span-3 shadow bg-white rounded-lg flex flex-col gap-4 relative transition-all ease-in-out">
-                        <div class="bg-blue-100 h-fit py-3 px-5 flex justify-end gap-5 rounded-t items-center">
+                        class="col-span-3 tablet:col-span-4 shadow bg-white rounded-lg flex flex-col gap-4 relative transition-all ease-in-out">
+                        <div
+                            class="bg-blue-100 h-fit py-3 px-5 flex justify-end gap-5 rounded-t items-center tablet:justify-start">
                             <a class="bg-kwr-orange text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
                                 href="#">On-Page SEO (My Site)</a>
                             <a class="bg-gray-300 text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
                                 href="#">Check Comparison with ranking site</a>
                         </div>
                         <!-- filters -->
-                        <div class="flex gap-5 text-sm border-b border-gray-200 pb-3 mx-5">
+                        <div
+                            class="flex flex-wrap gap-5 text-sm wide-tablet:text-xs border-b border-gray-200 pb-3 mx-5">
                             <a href="#"
                                 class="text-gray-500 flex items-center gap-3 bg-orange-100 hover:bg-orange-100 px-3 py-2 rounded transition-all ease-in-out">
                                 All (110)
@@ -227,13 +230,13 @@
                             </a>
                         </div>
 
-                        <!-- accordions?? -->
+                        <!-- accordions -->
                         <div class="mx-5">
                             <div>
                                 <h5 class="text-gray-600 mb-5">Title</h5>
                                 <!-- item 1 -->
-                                <div class="bg-[#fcfcfc] border border-[#fbfbfb] py-5 px-5 rounded mb-5">
-                                    <div class="text-gray-500">
+                                <div class="bg-[#fcfcfc] border border-[#fbfbfb] py-5 px-5 rounded mb-5 cursor-pointer">
+                                    <div class="text-gray-500" onclick="dipu()">
                                         <div class=" text-sm flex gap-5">
                                             <i class="mt-1 text-green-400 fa-solid fa-circle-check"></i>
                                             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -246,7 +249,7 @@
                                             <i class="mt-1 fa-solid fa-chevron-down"></i>
                                         </div>
                                     </div>
-                                    <div class="bg-blue-50 rounded font-light py-3 px-5 mx-8 my-2">
+                                    <div class="bg-blue-50 rounded font-light py-3 px-5 mx-8 my-2 hidden">
                                         <div class="text-xs text-gray-500 flex gap-2">
                                             <i class="text-sky-400 fa-solid fa-clipboard mt-[2px]"></i>
                                             <p>Lorem ipsum dolor sit amet consectetur
@@ -338,15 +341,9 @@
                         </div>
                     </div>
 
-
-
-
-
-
-
                     <div
-                        class="col-span-1 shadow bg-white rounded-lg py-10 flex flex-col gap-4 relative border border-white">
-                        <ul class="w-full">
+                        class="col-span-1 tablet:col-span-4 wide-tablet:text-xs shadow bg-white rounded-lg py-10 flex flex-col gap-4 relative border border-white">
+                        <ul class="w-full tablet:break-all">
                             <a href="#"
                                 class="text-gray-500 flex items-center gap-3 hover:bg-gray-100 pl-6 py-2 transition-all ease-in-out">
                                 <i class="text-blue-500 fa-solid fa-circle-info"></i>
@@ -395,7 +392,15 @@
 
         </div>
     </div>
-    </div>
+
+
+    <script>
+        function dipu() {
+            let data = document.querySelector("#ddd");
+            data.classList.toggle("hidden");
+        }
+    </script>
+
 </body>
 
 </html>
