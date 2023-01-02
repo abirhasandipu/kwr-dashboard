@@ -64,35 +64,53 @@
             </div> -->
         </div>
         <!-- main body -->
-        <div class=" w-full">
-            <div class=" flex">
+        <div class="">
+            <div class="">
                 <!-- banner and features -->
                 <div class="w-full">
                     <!-- header, search and notifications -->
-                    <div class="flex justify-between items-center mx-8 mt-3">
+                    <div
+                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3">
                         <!-- search -->
                         <div>
-                            <input class="w-96 shadow px-5 py-2 rounded-full" type="text" name=""
+                            <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
                                 placeholder="Search..." id="">
                         </div>
-                        <div class="flex items-center gap-5">
-                            <a href="#"
-                                class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
-                                <i class="text-xl fa-solid fa-comments"></i>
-                            </a>
-                            <a href="#"
-                                class="bg-white h-12 w-12 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
-                                <i class="text-xl fa-solid fa-bell"></i>
-                            </a>
+                        <!-- Profile and credits -->
+                        <div class="flex gap-10">
+                            <div class="flex items-center gap-3">
+                                <a href="#"
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    <i class="text-xl tablet:text-base fa-solid fa-comments"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    <i class="text-xl fa-solid fa-bell"></i>
+                                </a>
+                            </div>
+                            <h4 class="text-gray-500 flex items-center gap-2"><i
+                                    class="text-kwr-orange text-xl fa-solid fa-dollar-sign"></i>
+                                43,546</h4>
+                            <div class="flex gap-5 items-center text-right">
+                                <div class="shrink-0">
+                                    <h3 class="text-xl text-kwr-orange tablet:text-base">Dipu</h3>
+                                    <p class="text-gray-500 text-sm tablet:text-xs">Super Admin</p>
+                                </div>
+                                <div class="shrink-0">
+                                    <img class="h-10 w-10 object-cover rounded-full"
+                                        src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                                        alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- banner -->
-                    <div class="bg-gray-50">
+                    <!-- top section -->
+                    <div class="bg-gray-50 grid grid-cols-8 gap-5 tablet:grid-cols-4 px-8 py-5">
                         <div
-                            class="bg-white rounded-lg shadow pl-10 wide-tablet:pl-5 py-5 wide-tablet:py-3 flex flex-col mx-8 mt-4">
+                            class="col-span-3 tablet:col-span-4 bg-white rounded-lg shadow pl-10 wide-tablet:pl-5 py-5 wide-tablet:py-3 flex flex-col">
                             <h1 class="text-3xl wide-tablet:text-lg wide-mobile:text-base mb-2">Hello, Dipu!</h1>
                             <p
-                                class="text-gray-500 text-sm font-light w-[50%] mb-8 wide-tablet:mb-2 wide-tablet:text-xs tablet:text-[10px]">
+                                class="text-gray-500 text-sm font-light w-[80%] mb-8 wide-tablet:mb-2 wide-tablet:text-xs tablet:text-[10px]">
                                 Lorem ipsum
                                 dolor sit amet
                                 consectetur
@@ -103,6 +121,70 @@
                             <a class="bg-kwr-orange hover:bg-orange-400 active:bg-orange-500 transition-all ease-in-out text-white py-2 px-4 wide-tablet:px-2 wide-tablet:py-1 rounded w-fit text-xs"
                                 href="#">Click here</a>
                         </div>
+                        <div
+                            class="col-span-3 bg-white rounded-lg shadow wide-tablet:pl-5 tablet:col-span-4 py-3 px-5 wide-tablet:py-3 flex flex-col">
+                            <div class="wide-tablet:px-5 py-5 wide-tablet:py-3 flex flex-col">
+                                <!-- Credits and subs -->
+                                <div class="flex laptop:flex-col ">
+                                    <!-- <div>
+                                        <h4 class="font-semibold text-gray-400">Credits</h4>
+                                        <h4 class="font-bold text-gray-500 flex items-center gap-2"><i
+                                                class="text-kwr-orange text-2xl fa-solid fa-dollar-sign"></i>
+                                            43,546</h4>
+                                    </div> -->
+                                    <!-- <div class="laptop:mt-2">
+                                        <h4 class="font-semibold text-gray-400">Subscriptions</h4>
+                                        <div>
+                                            <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
+                                            <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <!-- Stats -->
+                                <h3 class="text-gray-500 font-semibold">Statistics</h3>
+                                <div class="grid grid-cols-2">
+                                    <div class="col-span-1 mt-3">
+                                        <h3 class="mb-2 text-gray-400 text-sm">Running</h3>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="h-8 w-1 bg-[#FFA1A1]"></div>
+                                            <h2 class="text-xl">12</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1 mt-3">
+                                        <h3 class="mb-2 text-gray-400 text-sm">Completed</h3>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="h-8 w-1 bg-[#BFFFA1]"></div>
+                                            <h2 class="text-xl">5</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1 mt-3">
+                                        <h3 class="mb-2 text-gray-400 text-sm">Paused</h3>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="h-8 w-1 bg-[#FFEAA1]"></div>
+                                            <h2 class="text-xl">2</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-1 mt-3">
+                                        <h3 class="mb-2 text-gray-400 text-sm">On Queue</h3>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="h-8 w-1 bg-[#F2A1FF]"></div>
+                                            <h2 class="text-xl">6</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Chart -->
+                        <div
+                            class="col-span-2 tablet:col-span-4 bg-white rounded-lg shadow flex justify-center items-center">
+                            <img src="/src/assets/chart1.png" alt="">
+                        </div>
+
                     </div>
 
                     <!-- features -->
@@ -125,7 +207,7 @@
                                     Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
                                     ex?</p>
                             </div> -->
-                            <a href="/src/onpageseo1.html"
+                            <a href="form.html"
                                 class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
@@ -243,76 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- profile info -->
-                <div class="w-96 h-fit">
-                    <div class="flex flex-col shadow rounded-l mt-3 mr-3 bg-white gap-10 px-5 py-5 justify-between">
-                        <div class="flex gap-14 items-center">
-                            <div class="">
-                                <h3 class="text-xl text-kwr-orange">Dipu</h3>
-                                <p class="text-gray-500 text-sm">Super Admin</p>
-                            </div>
-                            <div class="">
-                                <img class="h-10 w-10 object-cover rounded-full"
-                                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
-                                    alt="">
-                            </div>
-                        </div>
-                        <!-- Credits and subs -->
-                        <div class="flex justify-between">
-                            <div>
-                                <H4 class="font-semibold text-gray-400">Credits</H4>
-                                <H4 class="font-bold text-gray-500 flex items-center gap-2"><i
-                                        class="text-kwr-orange text-2xl fa-solid fa-dollar-sign"></i>
-                                    43,546</H4>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-400">Subscriptions</h4>
-                                <div>
-                                    <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
-                                    <h5 class="text-sm text-gray-500 font-light">Lorem - ipsum dolor</h5>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Stats -->
-                        <div class="grid grid-cols-2">
-                            <div class="col-span-1 mt-3">
-                                <h3 class="mb-2 text-gray-400 font-semibold">Running</h3>
-                                <div class="flex gap-2 items-center">
-                                    <div class="h-8 w-1 bg-[#FFA1A1]"></div>
-                                    <h2 class="text-xl">12</h2>
-                                </div>
-                            </div>
-                            <div class="col-span-1 mt-3">
-                                <h3 class="mb-2 text-gray-400 font-semibold">Completed</h3>
-                                <div class="flex gap-2 items-center">
-                                    <div class="h-8 w-1 bg-[#BFFFA1]"></div>
-                                    <h2 class="text-xl">5</h2>
-                                </div>
-                            </div>
-                            <div class="col-span-1 mt-3">
-                                <h3 class="mb-2 text-gray-400 font-semibold">Paused</h3>
-                                <div class="flex gap-2 items-center">
-                                    <div class="h-8 w-1 bg-[#FFEAA1]"></div>
-                                    <h2 class="text-xl">2</h2>
-                                </div>
-                            </div>
-                            <div class="col-span-1 mt-3">
-                                <h3 class="mb-2 text-gray-400 font-semibold">On Queue</h3>
-                                <div class="flex gap-2 items-center">
-                                    <div class="h-8 w-1 bg-[#F2A1FF]"></div>
-                                    <h2 class="text-xl">6</h2>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- Graph -->
-                    <div class="mr-3 border mt-10">
-                        <img class="" src="assets/chart.png" alt="">
-                    </div>
-                </div>
             </div>
             <!-- table -->
             <div class="mx-8 mb-5 rounded-md shadow">
