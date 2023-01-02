@@ -597,10 +597,6 @@ video {
   grid-column: span 6 / span 6;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -865,6 +861,10 @@ video {
   width: 14rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -879,10 +879,6 @@ video {
 
 .w-0 {
   width: 0px;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-32 {
@@ -1323,12 +1319,12 @@ video {
   padding: 0.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-3 {
@@ -2055,11 +2051,6 @@ body {
     grid-column: span 6 / span 6;
   }
 
-  .laptop\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
   .laptop\:ml-0 {
     margin-left: 0px;
   }
@@ -2093,6 +2084,14 @@ body {
     grid-column: span 6 / span 6;
   }
 
+  .wide-tablet\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .wide-tablet\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .wide-tablet\:flex-col {
     flex-direction: column;
   }
@@ -2105,9 +2104,38 @@ body {
     gap: 1.25rem;
   }
 
+  .wide-tablet\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .wide-tablet\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .wide-tablet\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .wide-tablet\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .wide-tablet\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .wide-tablet\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .wide-tablet\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -2121,20 +2149,8 @@ body {
     margin-right: 0.5rem;
   }
 
-  .tablet\:w-40 {
-    width: 10rem;
-  }
-
-  .tablet\:w-56 {
-    width: 14rem;
-  }
-
   .tablet\:w-44 {
     width: 11rem;
-  }
-
-  .tablet\:flex-col {
-    flex-direction: column;
   }
 
   .tablet\:items-start {
@@ -2143,10 +2159,6 @@ body {
 
   .tablet\:justify-start {
     justify-content: flex-start;
-  }
-
-  .tablet\:gap-3 {
-    gap: 0.75rem;
   }
 
   .tablet\:break-all {
@@ -2162,6 +2174,10 @@ body {
     padding-right: 0.5rem;
   }
 
+  .tablet\:text-\[10px\] {
+    font-size: 10px;
+  }
+
   .tablet\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2170,5 +2186,20 @@ body {
   .tablet\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media (max-width: 640.98px) {
+  .wide-mobile\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .wide-mobile\:flex-col {
+    flex-direction: column;
+  }
+
+  .wide-mobile\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

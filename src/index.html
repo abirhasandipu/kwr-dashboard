@@ -14,41 +14,45 @@
     <title>KWRocket</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- main body div -->
-    <div class="flex w-screen bg-gray-50">
+    <div class="flex w-screen">
         <!-- sidebar -->
-        <div class="sticky top-0 h-screen w-64 flex flex-col bg-white shadow text-gray-500">
-            <img class="mx-10 mt-8" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+        <div class="sticky top-0 h-screen w-60 flex flex-col bg-white shadow text-gray-500 shrink-0 small-laptop:w-14">
+            <div class="flex mt-8 gap-5 items-center justify-center">
+                <img class="h-8 small-laptop:hidden" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+                <button class="text-gray-400 small-laptop:rotate-180 mt-1"><i
+                        class="fa-solid fa-angles-left"></i></button>
+            </div>
             <ul class="flex flex-col mt-10">
                 <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-laptop"></i>
-                    <li>Dashboard</li>
+                    <li class="small-laptop:hidden">Dashboard</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-flag"></i>
-                    <li>Campaigns</li>
+                    <li class="small-laptop:hidden">Campaigns</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-music"></i>
-                    <li>Lorem</li>
+                    <li class="small-laptop:hidden">Lorem</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <li>Stats</li>
+                    <li class="small-laptop:hidden">Stats</li>
                 </a>
                 <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
                     href="#">
                     <i class="fa-solid fa-ticket"></i>
-                    <li>Tickets</li>
+                    <li class="small-laptop:hidden">Tickets</li>
                 </a>
 
             </ul>
-            <div class="absolute bottom-8 px-5 flex flex-col gap-2">
+            <!-- <div class="absolute bottom-8 px-5 flex flex-col gap-2">
                 <a class="flex items-center gap-3 hover:text-kwr-orange transition-all ease-in-out pl-5 py-3" href="#">
                     <i class="fa-solid fa-gear"></i>
                     <p>Settings</p>
@@ -57,7 +61,7 @@
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <p>Logout</p>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!-- main body -->
         <div class=" w-full">
@@ -84,15 +88,19 @@
                     </div>
                     <!-- banner -->
                     <div class="bg-gray-50">
-                        <div class="bg-white rounded-lg shadow pl-10 py-5 flex flex-col mx-8 mt-4">
-                            <h1 class="text-3xl mb-2">Hello, Dipu!</h1>
-                            <p class="text-gray-500 text-sm font-light w-[50%] mb-8">Lorem ipsum dolor sit amet
+                        <div
+                            class="bg-white rounded-lg shadow pl-10 wide-tablet:pl-5 py-5 wide-tablet:py-3 flex flex-col mx-8 mt-4">
+                            <h1 class="text-3xl wide-tablet:text-lg wide-mobile:text-base mb-2">Hello, Dipu!</h1>
+                            <p
+                                class="text-gray-500 text-sm font-light w-[50%] mb-8 wide-tablet:mb-2 wide-tablet:text-xs tablet:text-[10px]">
+                                Lorem ipsum
+                                dolor sit amet
                                 consectetur
                                 adipisicing elit.
                                 Aliquid
                                 animi tempora
                                 perspiciatis libero ipsam saepe tempore quas, provident eveniet eum.</p>
-                            <a class="bg-kwr-orange hover:bg-orange-400 active:bg-orange-500 transition-all ease-in-out text-white py-2 px-4 rounded w-fit text-xs"
+                            <a class="bg-kwr-orange hover:bg-orange-400 active:bg-orange-500 transition-all ease-in-out text-white py-2 px-4 wide-tablet:px-2 wide-tablet:py-1 rounded w-fit text-xs"
                                 href="#">Click here</a>
                         </div>
                     </div>
@@ -102,7 +110,7 @@
                         <h3 class="mb-5 text-kwr-orange">Features</h3>
 
                         <!-- Cards -->
-                        <div class="grid grid-cols-3 gap-y-12 gap-x-7">
+                        <div class="grid grid-cols-3 wide-tablet:grid-cols-2 wide-mobile:grid-cols-1 gap-y-12 gap-x-7">
                             <!-- <div
                                 class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
@@ -117,41 +125,43 @@
                                     Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
                                     ex?</p>
                             </div> -->
-                            <a href="#"
+                            <a href="/src/onpageseo1.html"
                                 class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-xl text-white fa-solid fa-arrow-trend-up"></i>
                                 </div>
-                                <h4 class="text-xl">Keyword Research</h4>
-                                <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
+                                <h4 class="text-xl wide-tablet:text-base">Keyword Research</h4>
+                                <p class="text-xs text-gray-500 w-[80%] font-light tablet:text-[10px]">Lorem ipsum,
+                                    dolor sit amet
                                     consectetur
                                     adipisicing
                                     elit.
                                     Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
                                     ex?</p>
                             </a>
-                            <a href="#"
+                            <a href="/src/onpageseo1.html"
                                 class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-stairs"></i>
                                 </div>
-                                <h4 class="text-xl">Ranking Analyzer</h4>
-                                <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
+                                <h4 class="text-xl wide-tablet:text-base">Ranking Analyzer</h4>
+                                <p class="text-xs text-gray-500 w-[80%] font-light tablet:text-[10px]">Lorem ipsum,
+                                    dolor sit amet
                                     consectetur
                                     adipisicing
                                     elit.
                                     Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
                                     ex?</p>
                             </a>
-                            <a href="#"
+                            <a href="/src/onpageseo1.html"
                                 class="col-span-1 shadow bg-white rounded-lg py-10 px-6 flex flex-col gap-4 relative border border-white hover:border-kwr-orange transition-all ease-in-out">
                                 <div
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-rocket"></i>
                                 </div>
-                                <h4 class="text-xl">Semantic Keyword Tool</h4>
+                                <h4 class="text-xl wide-tablet:text-base">Semantic Keyword Tool</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -165,7 +175,7 @@
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-flag"></i>
                                 </div>
-                                <h4 class="text-xl">Related Keywords</h4>
+                                <h4 class="text-xl wide-tablet:text-base">Related Keywords</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -179,7 +189,7 @@
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-forward"></i>
                                 </div>
-                                <h4 class="text-xl">Rank Tracking</h4>
+                                <h4 class="text-xl wide-tablet:text-base">Rank Tracking</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -193,7 +203,7 @@
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-key"></i>
                                 </div>
-                                <h4 class="text-xl">OnPage SEO Checker</h4>
+                                <h4 class="text-xl wide-tablet:text-base">OnPage SEO Checker</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -207,7 +217,7 @@
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-gauge-simple-high"></i>
                                 </div>
-                                <h4 class="text-xl">Backlink Inspector</h4>
+                                <h4 class="text-xl wide-tablet:text-base">Backlink Inspector</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -221,7 +231,7 @@
                                     class="absolute right-5 -top-5 bg-kwr-red h-12 w-12 rounded-lg flex justify-center items-center text-white">
                                     <i class="text-white text-xl fa-solid fa-car-on"></i>
                                 </div>
-                                <h4 class="text-xl">Niche Research</h4>
+                                <h4 class="text-xl wide-tablet:text-base">Niche Research</h4>
                                 <p class="text-xs text-gray-500 w-[80%] font-light">Lorem ipsum, dolor sit amet
                                     consectetur
                                     adipisicing
@@ -307,7 +317,7 @@
             <!-- table -->
             <div class="mx-8 mb-5 rounded-md shadow">
                 <div class="bg-white p-8 rounded-md w-full">
-                    <div class=" flex items-center justify-between pb-6">
+                    <div class="flex items-center justify-between pb-6">
                         <div>
                             <h2 class="text-gray-600 font-medium">Recent Campaigns</h2>
                         </div>

@@ -68,7 +68,8 @@
             <div class=" flex">
                 <div class="w-full">
                     <!-- header, search and notifications -->
-                    <div class="flex justify-between items-center tablet::mx-2 mx-8 mt-3">
+                    <div
+                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3">
                         <!-- search -->
                         <div>
                             <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
@@ -102,8 +103,8 @@
                     <div class="bg-gray-50">
                         <div
                             class="bg-white rounded-lg shadow px-10 py-5 flex wide-tablet:flex-col wide-tablet:gap-5 justify-between items-center wide-tablet:items-start tablet:mx-2 mx-8 mt-4">
-                            <h1 class="text-xl">https://abirhasandipu.com/</h1>
-                            <div class="flex gap-3">
+                            <h1 class="text-xl break-all">https://abirhasandipu.com/</h1>
+                            <div class="flex flex-wrap gap-3">
                                 <a class="bg-gray-100 border border-gray-200 hover:border-kwr-orange active:bg-gray-200 transition-all ease-in-out text-gray-600 py-2 px-4 rounded w-fit text-xs"
                                     href="#">Select Competitor</a>
                                 <a class="bg-gray-100 border border-gray-200 hover:border-kwr-orange active:bg-gray-200 transition-all ease-in-out text-gray-600 py-2 px-4 rounded w-fit text-xs"
@@ -198,12 +199,18 @@
                 <div class="grid grid-cols-4 gap-y-6 gap-x-5">
                     <div
                         class="col-span-3 tablet:col-span-4 shadow bg-white rounded-lg flex flex-col gap-4 relative transition-all ease-in-out">
-                        <div
-                            class="bg-blue-100 h-fit py-3 px-5 flex justify-end gap-5 rounded-t items-center tablet:justify-start">
-                            <a class="bg-kwr-orange text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
-                                href="#">On-Page SEO (My Site)</a>
-                            <a class="bg-gray-300 text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
-                                href="#">Check Comparison with ranking site</a>
+                        <div class="bg-blue-100 h-fit py-3 px-5 flex justify-between gap-5 rounded-t items-center">
+                            <div>
+                                <a href="/src/index.html"
+                                    class="bg-gray-300 text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"><i
+                                        class="mr-2 fa-solid fa-less-than"></i>Back</a>
+                            </div>
+                            <div>
+                                <a class="bg-kwr-orange text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
+                                    href="/src/onpageseo1.html">On-Page SEO (My Site)</a>
+                                <a class="bg-gray-300 text-white hover:bg-orange-400 active:bg-kwr-orange transition-all ease-in-out py-2 px-4 rounded w-fit text-xs"
+                                    href="/src/onpageseo2.html">Check Comparison with ranking site</a>
+                            </div>
                         </div>
                         <!-- filters -->
                         <div
