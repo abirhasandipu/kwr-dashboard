@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>KWRocket</title>
+</head>
+
+<body class="bg-gray-50">
+    <!-- main body div -->
+    <div class="flex w-screen">
+        <!-- sidebar -->
+        <div class="sticky top-0 h-screen w-60 flex flex-col bg-white shadow text-gray-500 shrink-0 small-laptop:w-14">
+            <div class="flex mt-8 gap-5 items-center justify-center">
+                <img class="h-8 small-laptop:hidden" src="assets/keywordrocket_logo.svg" alt="KWRocket-logo">
+                <button class="text-gray-400 small-laptop:rotate-180 mt-1"><i
+                        class="fa-solid fa-angles-left"></i></button>
+            </div>
+            <ul class="flex flex-col mt-10">
+                <a class="flex items-center gap-3 bg-gray-50 text-kwr-orange hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-laptop"></i>
+                    <li class="small-laptop:hidden">Dashboard</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-flag"></i>
+                    <li class="small-laptop:hidden">Campaigns</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-music"></i>
+                    <li class="small-laptop:hidden">Lorem</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <li class="small-laptop:hidden">Stats</li>
+                </a>
+                <a class="flex items-center gap-3 hover:text-kwr-orange hover:bg-gray-50 hover:scale-105 transition-all ease-in-out pl-5 py-3"
+                    href="#">
+                    <i class="fa-solid fa-ticket"></i>
+                    <li class="small-laptop:hidden">Tickets</li>
+                </a>
+            </ul>
+        </div>
+        <!-- main body -->
+        <div class="w-full">
+            <div class="">
+                <!-- banner and features -->
+                <div class="w-full">
+                    <!-- header, search and notifications -->
+                    <div
+                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3">
+                        <!-- search -->
+                        <div>
+                            <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
+                                placeholder="Search..." id="">
+                        </div>
+                        <div class="flex gap-10">
+                            <div class="flex items-center gap-3">
+                                <a href="#"
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    <i class="text-xl tablet:text-base fa-solid fa-comments"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
+                                    <i class="text-xl fa-solid fa-bell"></i>
+                                </a>
+                            </div>
+                            <div class="flex gap-5 items-center text-right">
+                                <div class="shrink-0">
+                                    <h3 class="text-xl text-kwr-orange tablet:text-base">Dipu</h3>
+                                    <p class="text-gray-500 text-sm tablet:text-xs">Super Admin</p>
+                                </div>
+                                <div class="shrink-0">
+                                    <img class="h-10 w-10 object-cover rounded-full"
+                                        src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Edit profile -->
+                    <div class="px-8 py-5">
+
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="mt-5 mb-20 py-5 px-10 rounded-md shadow-md bg-white w-[40%] small-laptop:w-[70] tablet:w-[80%] h-auto">
+                                <h3 class="pb-5 mb-5 text-xl font-medium border-b">
+                                    Edit Profile Information
+                                </h3>
+
+                                <div class="flex">
+                                    <img class="object-cover h-20 w-20 rounded-full border"
+                                        src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80"
+                                        alt="" />
+                                    <div class="mt-8 flex items-center">
+                                        <button
+                                            class="flex justify-center items-center w-10 h-10 py-1 px-5 mx-2 rounded-full border text-kwr-orange hover:bg-kwr-orange hover:text-white ease-in-out duration-200">
+                                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                        </button>
+                                        <button
+                                            class="flex justify-center items-center w-10 h-10 py-1 px-5 mx-2 rounded-full border text-kwr-red hover:bg-kwr-red hover:text-white ease-in-out duration-200">
+                                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex mt-5 flex-col">
+                                    <form action="" class="mt-5">
+                                        <label class="text-gray-600" for="">Name</label>
+                                        <input class="w-full border-2 border-indigo-300 py-2 px-4 mb-4 rounded-md "
+                                            type="text" placeholder="Abir Hasan" />
+                                        <label class="text-gray-600" for="">Email</label>
+                                        <input class="w-full border-2 border-gray-300 bg-gray-100 py-2 px-4 rounded-md"
+                                            type="email" disabled placeholder="abir@yivesystems.com" />
+                                        <div class="my-5 border-b"></div>
+                                        <label class="text-gray-600" for="">Password</label>
+                                        <input class="w-full border-2 border-indigo-300 py-2 px-4 mb-4 rounded-md"
+                                            type="password" placeholder="Password" />
+                                        <label class="text-gray-600" for="">Confirm Password</label>
+                                        <input class="w-full border-2 border-indigo-300 py-2 px-4 mb-4 rounded-md"
+                                            type="password" placeholder="" />
+                                        <label for="">Role</label>
+                                        <select
+                                            class="w-full border-2 border-indigo-300 text-gray-500 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                            id="grid-state">
+                                            <option>Assign Role</option>
+                                            <option>Developer</option>
+                                            <option>Super Admin</option>
+                                            <option>Admin</option>
+                                            <option>User</option>
+                                        </select>
+
+                                        <input
+                                            class="px-8 py-2 mt-5 bg-kwr-red text-white rounded-md hover:bg-red-400 active:bg-kwr-red ease-in-out duration-200 cursor-pointer"
+                                            type="submit" />
+                                    </form>
+                                </div>
+                                <div class="">
+                                    <div class="grid grid-cols-2 pb-3 my-5 items-center border-b">
+                                        <h3 class="text-xl font-medium">Subscriptions</h3>
+                                        <select
+                                            class="h-10 border-2 border-indigo-300 text-gray-500 py-2 px-4 pr-8 rounded-md focus:outline-none focus:bg-white focus:border-gray-500">
+                                            <option>Assign Subscription</option>
+                                            <option>Starter</option>
+                                            <option>Professional</option>
+                                            <option>Business</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="flex justify-between items-center">
+                                        <p>KeywordRocket</p>
+                                        <p class="flex items-center gap-2">
+                                            <i class="text-xs text-green-500 fa-sharp fa-solid fa-circle"></i>Active
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-green-500 w-8 h-8 flex justify-center items-center rounded-md"><i
+                                                    class="text-white fa-solid fa-check"></i></span>
+                                            <span
+                                                class="bg-yellow-500 w-8 h-8 flex justify-center items-center rounded-md"><i
+                                                    class="text-white fa-solid fa-money-bill"></i></span>
+                                            <span
+                                                class="bg-red-500 w-8 h-8 flex justify-center items-center rounded-md"><i
+                                                    class="text-white fa-solid fa-xmark"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- table -->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
