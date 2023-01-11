@@ -107,50 +107,618 @@
                         <h2 class="text-kwr-orange text-2xl">Rank Tracking</h2>
                     </div>
 
-                    <div class="bg-gray-50 grid grid-cols-7 gap-5 px-8 py-5 border border-red-300">
-                        <div class="py-3 px-6 col-span-2 bg-white rounded-lg shadow flex justify-between items-center">
+                    <div class="bg-gray-50 grid grid-cols-7 px-8 py-5 gap-10">
+                        <div
+                            class="py-3 flex-col px-6 col-span-2 bg-white rounded-lg shadow flex justify-between items-center">
+                            <p>Domain name</p>
+                            <p>Keywords tracking</p>
+                            <p>last updated</p>
                         </div>
-                        <div class="grid col-span-4 gap-5 grid-cols-4">
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                                <div class="flex flex-col gap-2 justify-center items-center">
-                                    <div>
-                                        <h4 class="text-gray-500 text-xs font-light">Keyword moved down</h4>
+
+                        <!-- small boxes -->
+                        <div class="grid col-span-4 gap-10 grid-cols-4">
+
+                            <!-- average, up, down, nochange -->
+                            <div class="grid grid-cols-2 col-span-2 gap-5">
+                                <div class="col-span-2 -ml-3">
+                                    <h3>Today's Overview</h3>
+                                </div>
+                                <!-- 1 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Average position</h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">3</h2>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center gap-1">
-                                        <h2 class="text-3xl text-gray-500">30</h2>
-                                        <i class="text-lg text-red-400 fa-solid fa-arrow-down"></i>
+                                </div>
+                                <!-- 2 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords moved up</h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">3</h2>
+                                            <i class="text-lg text-green-400 fa-solid fa-arrow-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords without change</h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">84</h2>
+                                            <i class="text-lg text-yellow-400 fa-solid fa-arrows-up-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords moved down</h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">19</h2>
+                                            <i class="text-lg text-red-400 fa-solid fa-arrow-down"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                            </div>
-                            <div
-                                class="py-3 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+
+                            <!-- Leaderboard -->
+                            <div class="grid grid-cols-2 col-span-2 gap-5">
+                                <div class="col-span-2 -ml-2">
+                                    <h3>Leaderboard</h3>
+                                </div>
+                                <!-- 5 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
+                                                    class="font-semibold text-sm">3</span></h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">5</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
+                                                    class="font-semibold text-sm">10</span></h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">4</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center gap-4">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
+                                                    class="font-semibold text-sm">30</span></h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-xl text-gray-500">9</h2>
+                                        </div>
+                                    </div>
+                                    <div class="border-l h-full"></div>
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
+                                                    class="font-semibold text-sm">100</span></h4>
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <h2 class="text-xl text-gray-500">17</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    <div class="flex flex-col gap-2 justify-center items-center">
+                                        <div>
+                                            <h4 class="text-gray-500 text-xs font-light">Not ranked</h4>
+                                        </div>
+                                        <div class="relative flex items-center gap-1">
+                                            <h2 class="text-3xl text-gray-500">7</h2>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- table -->
-                <div class="border border-green-400 mt-5 mx-8">
-                    table
+                <div class="mx-8 mb-5 rounded-md shadow">
+                    <div class="bg-white p-8 rounded-md w-full">
+                        <div class="flex items-center justify-between pb-6 flex-wrap">
+                            <div>
+                                <h2 class="text-kwr-orange font-medium">Campaigns</h2>
+                            </div>
+                            <div class="flex items-center gap-3 justify-between flex-wrap">
+                                <div class="flex bg-gray-50 items-center p-2 rounded-md">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <input class="bg-gray-50 outline-none ml-1 block " type="text" name="" id=""
+                                        placeholder="search...">
+                                </div>
+                                <!-- select dropdown -->
+                                <div>
+                                    <div class="relative inline-block text-left">
+                                        <div>
+                                            <button type="button"
+                                                class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-gray-100"
+                                                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                                Options
+                                                <!-- Heroicon name: mini/chevron-down -->
+                                                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <!--
+                                          Dropdown menu, show/hide based on menu state.
+                                      
+                                          Entering: "transition ease-out duration-100"
+                                            From: "transform opacity-0 scale-95"
+                                            To: "transform opacity-100 scale-100"
+                                          Leaving: "transition ease-in duration-75"
+                                            From: "transform opacity-100 scale-100"
+                                            To: "transform opacity-0 scale-95"
+                                        -->
+                                        <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                            role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                            tabindex="-1">
+                                            <div class="py-1" role="none">
+                                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Backlink
+                                                    Inspector</a>
+                                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Keyword Research</a>
+                                                <a href="#" class="text-gray-700 block px-4 py-2 text-sm"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Niche Research</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex gap-3">
+                                    <a class="bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red transition-all ease-in-out text-white py-3 px-4 rounded w-fit text-xs"
+                                        href="#">Create new</a>
+                                    <a class="bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red transition-all ease-in-out text-white py-3 px-4 rounded w-fit text-xs"
+                                        href="#">View all</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+                                <div class="inline-block min-w-full rounded-lg overflow-hidden">
+                                    <table class="min-w-full leading-normal">
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Keyword
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Type
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Search index
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Rank
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    +/-
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Requested
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Last run
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    User
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Status
+                                                </th>
+                                                <th
+                                                    class="px-5 py-6 border-b border-gray-200 text-left font-light text-gray-600 tracking-wider">
+                                                    Actions
+                                                </th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class=" font-light whitespace-no-wrap">
+                                                        Keywords will be displayed here</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0 ">
+                                                            <i class="text-kwr-orange fa-solid fa-arrow-trend-up"></i>
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <p class="text-gray-600 whitespace-no-wrap">
+                                                                Rank Tracking
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div
+                                                        class="text-gray-600 whitespace-no-wrap flex gap-2 items-center">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <img class="h-4" src="/src/assets/google-logo.png" alt="">
+                                                        <img class="h-4" src="/src/assets/us-flag.png" alt="">
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">32</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        2 <i class="text-green-400 fa-solid fa-arrow-up"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        Abir Hasan
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-light text-green-600 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-100 rounded-full"></span>
+                                                        <span class="relative text-xs">Success</span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <i class="text-gray-600 fa-solid fa-ellipsis-vertical"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-blue-700 font-light whitespace-no-wrap">
+                                                        https://tailwindcss.com/docs/gradient-color-stops</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0 ">
+                                                            <i class="text-kwr-orange fa-solid fa-arrow-trend-up"></i>
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <p class="text-gray-600 whitespace-no-wrap">
+                                                                Rank Tracking
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div
+                                                        class="text-gray-600 whitespace-no-wrap flex gap-2 items-center">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <img class="h-4" src="/src/assets/google-logo.png" alt="">
+                                                        <img class="h-4" src="/src/assets/us-flag.png" alt="">
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">32</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        2 <i class="text-green-400 fa-solid fa-arrow-up"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        Abir Hasan
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-light text-green-600 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-100 rounded-full"></span>
+                                                        <span class="relative text-xs">Success</span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <i class="text-gray-600 fa-solid fa-ellipsis-vertical"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-blue-700 font-light whitespace-no-wrap">
+                                                        https://tailwindcss.com/docs/gradient-color-stops</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0 ">
+                                                            <i class="text-kwr-orange fa-solid fa-arrow-trend-up"></i>
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <p class="text-gray-600 whitespace-no-wrap">
+                                                                Rank Tracking
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                    <div
+                                                        class="text-gray-600 whitespace-no-wrap flex gap-2 items-center">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <img class="h-4" src="/src/assets/google-logo.png" alt="">
+                                                        <img class="h-4" src="/src/assets/us-flag.png" alt="">
+                                                    </div>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">32</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        2 <i class="text-green-400 fa-solid fa-arrow-up"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        Abir Hasan
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-light text-green-600 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-100 rounded-full"></span>
+                                                        <span class="relative text-xs">Success</span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <i class="text-gray-600 fa-solid fa-ellipsis-vertical"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-blue-700 font-light whitespace-no-wrap">
+                                                        https://tailwindcss.com/docs/gradient-color-stops</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0 ">
+                                                            <i class="text-kwr-orange fa-solid fa-arrow-trend-up"></i>
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <p class="text-gray-600 whitespace-no-wrap">
+                                                                Rank Tracking
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                    <div
+                                                        class="text-gray-600 whitespace-no-wrap flex gap-2 items-center">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <img class="h-4" src="/src/assets/google-logo.png" alt="">
+                                                        <img class="h-4" src="/src/assets/us-flag.png" alt="">
+                                                    </div>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">32</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        2 <i class="text-green-400 fa-solid fa-arrow-up"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        Abir Hasan
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-light text-green-600 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-100 rounded-full"></span>
+                                                        <span class="relative text-xs">Success</span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <i class="text-gray-600 fa-solid fa-ellipsis-vertical"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-blue-700 font-light whitespace-no-wrap">
+                                                        https://tailwindcss.com/docs/gradient-color-stops</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <div class="flex items-center">
+                                                        <div class="flex-shrink-0 ">
+                                                            <i class="text-kwr-orange fa-solid fa-arrow-trend-up"></i>
+                                                        </div>
+                                                        <div class="ml-2">
+                                                            <p class="text-gray-600 whitespace-no-wrap">
+                                                                Rank Tracking
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                    <div
+                                                        class="text-gray-600 whitespace-no-wrap flex gap-2 items-center">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                        <img class="h-4" src="/src/assets/google-logo.png" alt="">
+                                                        <img class="h-4" src="/src/assets/us-flag.png" alt="">
+                                                    </div>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">32</p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        2 <i class="text-green-400 fa-solid fa-arrow-up"></i>
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        1 second ago
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p class="text-gray-600 whitespace-no-wrap">
+                                                        Abir Hasan
+                                                    </p>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-light text-green-600 leading-tight">
+                                                        <span aria-hidden
+                                                            class="absolute inset-0 bg-green-100 rounded-full"></span>
+                                                        <span class="relative text-xs">Success</span>
+                                                    </span>
+                                                </td>
+                                                <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <span
+                                                        class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                        <i class="text-gray-600 fa-solid fa-ellipsis-vertical"></i>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!-- Pagination buttons -->
+                                    <!-- <div
+                                        class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
+                                        <span class="text-xs xs:text-sm text-gray-900">
+                                            Showing 1 to 4 of 50 Entries
+                                        </span>
+                                        <div class="flex inline-flex mt-2 xs:mt-0">
+                                            <button
+                                                class="text-sm text-white transition duration-150 hover:bg-orange-400 bg-kwr-orange active:bg-orange-500 font-semibold py-2 px-4 rounded-l">
+                                                Prev
+                                            </button>
+                                            &nbsp; &nbsp;
+                                            <button
+                                                class="text-sm text-white transition duration-150 hover:bg-orange-400 bg-kwr-orange active:bg-orange-500 font-semibold py-2 px-4 rounded-r">
+                                                Next
+                                            </button>
+    
+                                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
