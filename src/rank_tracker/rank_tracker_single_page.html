@@ -71,13 +71,13 @@
                 <div class="w-full">
                     <!-- header, search and notifications -->
                     <div
-                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3">
+                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3 gap-2">
                         <!-- search -->
                         <div>
                             <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
                                 placeholder="Search..." id="">
                         </div>
-                        <div class="flex gap-10">
+                        <div class="flex gap-10 w-full justify-end tablet:justify-between">
                             <div class="flex items-center gap-3">
                                 <a href="#"
                                     class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
@@ -102,19 +102,21 @@
                         </div>
                     </div>
                     <div class="flex gap-5 mx-8 mt-5 items-center">
-                        <a class="bg-white rounded-lg text-gray-500 border border-gray-300 flex items-center gap-3 px-4 py-1"
+                        <a class="bg-white rounded-lg text-gray-500 border border-gray-300 flex items-center gap-3 px-4 py-1 tablet:text-sm"
                             href=""><i class="fa-solid fa-arrow-left"></i> <span>Back</span></a>
-                        <h2 class="text-kwr-orange text-2xl">Rank Tracking</h2>
+                        <h2 class="text-kwr-orange text-2xl tablet:text-lg">Rank Tracking</h2>
                     </div>
 
-                    <!-- big box -->
-                    <div class="bg-gray-50 grid grid-cols-7 px-8 py-5 gap-10">
+                    <!-- top section with boxes -->
+                    <div
+                        class="bg-gray-50 grid grid-cols-7 laptop:grid-cols-6 tablet:grid-cols-2 px-8 tablet:px-2 py-5 gap-10 laptop:gap-5 tablet:gap-0">
+                        <!-- big box -->
                         <div class="py-3 px-6 col-span-2 bg-white rounded-lg shadow flex flex-col">
                             <div class="flex flex-col gap-2 mt-2">
                                 <p class="text-gray-600 font-light text-sm">Domain</p>
                                 <div class="flex gap-2 items-center">
                                     <i class="text-sm text-kwr-orange-90 fa-solid fa-globe"></i>
-                                    <p class="text-gray-500 text-xs">https://thisisnotareallink.com/</p>
+                                    <p class="text-gray-500 text-xs break-all">https://thisisnotareallink.com/</p>
                                 </div>
                             </div>
                             <div class="border-t mt-5 mb-3"></div>
@@ -125,7 +127,7 @@
                                     <p class="text-gray-500 text-xs">456</p>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-2 mt-2">
+                            <div class="flex flex-col gap-2 mt-2 mb-2">
                                 <p class="text-gray-600 font-light text-sm">Last updated</p>
                                 <div class="flex gap-2 items-center">
                                     <i class="text-sm text-kwr-orange-90 fa-regular fa-clock"></i>
@@ -133,19 +135,25 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <a class="w-1/4 mt-5 text-xs py-1 flex justify-center items-center gap-2 rounded bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red  text-white "
+                                href="#"><i class="fa-solid fa-rotate-left"></i> Refresh</a>
+
+                            <a class="w-1/4 mt-5 text-xs py-1 flex justify-center items-center gap-2 rounded  text-kwr-red border "
+                                href="#"><i class="fa-solid fa-rotate-left"></i> Refresh</a>
                         </div>
 
                         <!-- small boxes -->
-                        <div class="grid col-span-4 gap-10 grid-cols-4">
+                        <div class="grid col-span-4 gap-10 grid-cols-4 laptop:gap-5 tablet:grid-cols-1">
 
                             <!-- average, up, down, nochange -->
-                            <div class="grid grid-cols-2 col-span-2 gap-5">
-                                <div class="col-span-2 -ml-3">
+                            <div class="grid grid-cols-2 col-span-2 gap-5 tablet:mt-5">
+                                <div class="col-span-2 -ml-3 tablet:ml-0">
                                     <h3 class="text-kwr-orange">Today's Overview</h3>
                                 </div>
                                 <!-- 1 -->
                                 <div
-                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
+                                    class="py-7 px-6 col-span-1  bg-white rounded-lg shadow flex justify-between items-center">
                                     <div class="flex flex-col gap-2 justify-center items-center">
                                         <div>
                                             <h4 class="text-gray-500 text-xs font-light">Average position</h4>
@@ -198,7 +206,7 @@
 
                             <!-- Leaderboard -->
                             <div class="grid grid-cols-2 col-span-2 gap-5">
-                                <div class="col-span-2 -ml-2">
+                                <div class="col-span-2 -ml-2  tablet:ml-0">
                                     <h3 class="text-kwr-orange">Leaderboard</h3>
                                 </div>
                                 <!-- 5 -->
@@ -271,7 +279,7 @@
                 </div>
 
                 <!-- table -->
-                <div class="mx-8 mb-5 rounded-md shadow">
+                <div class="mx-8 tablet:mx-2 mb-5 rounded-md shadow">
                     <div class="bg-white p-8 rounded-md w-full">
                         <div class="flex items-center justify-between pb-6 flex-wrap">
                             <div>
