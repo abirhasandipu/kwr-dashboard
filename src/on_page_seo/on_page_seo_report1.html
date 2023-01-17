@@ -20,7 +20,7 @@
         <!-- sidebar -->
         <div class="sticky top-0 h-screen w-60 flex flex-col bg-white shadow text-gray-500 shrink-0 small-laptop:w-14">
             <div class="flex mt-8 gap-5 items-center justify-center">
-                <a href="index.html"><img class="h-8 small-laptop:hidden" src="assets/keywordrocket_logo.svg"
+                <a href="../index.html"><img class="h-8 small-laptop:hidden" src="../assets/keywordrocket_logo.svg"
                         alt="KWRocket-logo"></a>
                 <button class="text-gray-400 small-laptop:rotate-180 mt-1"><i
                         class="fa-solid fa-angles-left"></i></button>
@@ -70,13 +70,15 @@
                 <div class="w-full">
                     <!-- header, search and notifications -->
                     <div
-                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3">
+                        class="flex justify-between items-center wide-mobile:flex-col tablet:items-start tablet:mx-2 mx-8 mt-3 gap-2">
                         <!-- search -->
                         <div>
                             <input class="w-96 tablet:w-44 shadow px-5 py-2 rounded-full" type="text" name=""
                                 placeholder="Search..." id="">
                         </div>
-                        <div class="flex gap-10">
+
+                        <!-- notification and profile -->
+                        <div class="flex gap-10 w-full justify-end tablet:justify-between wide-mobile:gap-5">
                             <div class="flex items-center gap-3">
                                 <a href="#"
                                     class="bg-white p-3 tablet:p-2 rounded-xl shadow flex justify-center items-center hover:bg-gray-50 active:bg-gray-100 text-gray-600 hover:text-kwr-orange transition-all ease-in-out">
@@ -123,26 +125,28 @@
 
                     <!-- Report Summary -->
                     <!-- top section with boxes -->
-                    <div
-                        class="bg-gray-50 grid grid-cols-7 laptop:grid-cols-6 tablet:grid-cols-2 px-8 tablet:px-2 py-5 gap-10 laptop:gap-5 tablet:gap-0">
-                        <!-- big box -->
+                    <!-- top section -->
+                    <div class="flex gap-5 mx-8 mt-5 items-center">
+                        <a class="bg-white rounded-lg text-gray-500 border border-gray-300 flex items-center gap-3 px-4 py-1"
+                            href=""><i class="fa-solid fa-arrow-left"></i> <span>Back</span></a>
+                        <h2 class="text-kwr-orange text-2xl">OnPage SEO</h2>
+                    </div>
+                    <div class="bg-gray-50 grid grid-cols-8 gap-5 tablet:grid-cols-4 px-8 py-5">
+
+                        <!-- Big box -->
                         <div class="py-3 px-6 col-span-2 bg-white rounded-lg shadow flex flex-col">
-                            <div class="flex flex-col gap-2 mt-2">
+                            <div class="flex flex-col gap-2">
                                 <p class="text-gray-600 font-light text-sm">Domain</p>
                                 <div class="flex gap-2 items-center">
                                     <i class="text-sm text-kwr-orange-90 fa-solid fa-globe"></i>
-                                    <p class="text-gray-500 text-xs break-all">https://thisisnotareallink.com/</p>
+                                    <p class="text-gray-500 text-xs">https://thisisnotareallink.com/</p>
                                 </div>
                             </div>
-                            <div class="border-t mt-5 mb-3"></div>
-                            <div class="flex flex-col gap-2 mt-2">
-                                <p class="text-gray-600 font-light text-sm">Keywords Tracked</p>
-                                <div class="flex gap-2 items-center">
-                                    <i class="text-sm text-kwr-orange-90 fa-solid fa-list-check"></i>
-                                    <p class="text-gray-500 text-xs">456</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-2 mt-2 mb-2">
+
+                            <!-- line -->
+                            <div class="border-t my-3"></div>
+
+                            <div class="flex flex-col gap-2">
                                 <p class="text-gray-600 font-light text-sm">Last updated</p>
                                 <div class="flex gap-2 items-center">
                                     <i class="text-sm text-kwr-orange-90 fa-regular fa-clock"></i>
@@ -151,28 +155,50 @@
                                 </div>
                             </div>
 
-                            <a class="px-2 w-1/4 mt-3 text-xs py-1 flex justify-center items-center gap-2 rounded bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red  text-white "
-                                href="#"><i class="fa-solid fa-rotate-left"></i> Refresh</a>
-                            <p class="text-xs text-gray-400 font-light mt-2">Per keyword will cost 10 credits.</p>
+                            <!-- line -->
+                            <div class="border-t my-3"></div>
+
+                            <div class="flex flex-col gap-2">
+                                <p class="text-gray-600 font-light text-sm">Ranking URLs</p>
+                                <div
+                                    class="flex gap-5 items-center text-xs text-gray-500 font-light bg-gray-50 rounded border p-2">
+                                    <div class="flex flex-col gap-1">
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                        <p>https://thisisnotar...</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
-
-                        <!-- small boxes -->
-                        <div class="grid col-span-4 gap-10 grid-cols-4 laptop:gap-5 tablet:grid-cols-1">
-
-                            <!-- average, up, down, nochange -->
-                            <div class="grid grid-cols-2 col-span-2 gap-5 tablet:mt-5">
-                                <div class="col-span-2 -ml-3 tablet:ml-0">
+                        <div
+                            class="col-span-3 rounded-lg wide-tablet:pl-5 tablet:col-span-4 py-3 px-5 wide-tablet:py-3 flex flex-col">
+                            <div class="grid grid-cols-2 col-span-2 gap-5">
+                                <div class="col-span-2 -ml-3">
                                     <h3 class="text-kwr-orange">Today's Overview</h3>
                                 </div>
                                 <!-- 1 -->
                                 <div
-                                    class="py-7 px-6 col-span-1  bg-white rounded-lg shadow flex justify-between items-center">
+                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
                                     <div class="flex flex-col gap-2 justify-center items-center">
                                         <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Average position</h4>
+                                            <h4 class="text-gray-500 text-xs font-light">Passed</h4>
                                         </div>
                                         <div class="flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">3</h2>
+                                            <h2 class="text-3xl text-gray-500">19</h2>
+                                            <i class="text-lg text-green-400 fa-solid fa-check"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -181,11 +207,11 @@
                                     class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
                                     <div class="flex flex-col gap-2 justify-center items-center">
                                         <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords moved up</h4>
+                                            <h4 class="text-gray-500 text-xs font-light">Warning</h4>
                                         </div>
                                         <div class="flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">3</h2>
-                                            <i class="text-lg text-green-400 fa-solid fa-arrow-up"></i>
+                                            <h2 class="text-3xl text-gray-500">6</h2>
+                                            <i class="text-lg text-yellow-400 fa-solid fa-triangle-exclamation"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -194,11 +220,11 @@
                                     class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
                                     <div class="flex flex-col gap-2 justify-center items-center">
                                         <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords without change</h4>
+                                            <h4 class="text-gray-500 text-xs font-light">Critical</h4>
                                         </div>
                                         <div class="flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">84</h2>
-                                            <i class="text-lg text-yellow-400 fa-solid fa-arrows-up-down"></i>
+                                            <h2 class="text-3xl text-gray-500">2</h2>
+                                            <i class="text-lg text-red-400 fa-solid fa-xmark"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -207,87 +233,27 @@
                                     class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
                                     <div class="flex flex-col gap-2 justify-center items-center">
                                         <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords moved down</h4>
+                                            <h4 class="text-gray-500 text-xs font-light">Lorem ipsum</h4>
                                         </div>
                                         <div class="flex items-center gap-1">
                                             <h2 class="text-3xl text-gray-500">19</h2>
-                                            <i class="text-lg text-red-400 fa-solid fa-arrow-down"></i>
+                                            <i class="text-lg text-blue-400 fa-solid fa-person"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Leaderboard -->
-                            <div class="grid grid-cols-2 col-span-2 gap-5">
-                                <div class="col-span-2 -ml-2  tablet:ml-0">
-                                    <h3 class="text-kwr-orange">Leaderboard</h3>
-                                </div>
-                                <!-- 5 -->
-                                <div
-                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                                    <div class="flex flex-col gap-2 justify-center items-center">
-                                        <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
-                                                    class="font-semibold text-sm">3</span></h4>
-                                        </div>
-                                        <div class="flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">5</h2>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <!-- 6 -->
-                                <div
-                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                                    <div class="flex flex-col gap-2 justify-center items-center">
-                                        <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
-                                                    class="font-semibold text-sm">10</span></h4>
-                                        </div>
-                                        <div class="flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">4</h2>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 7 -->
-                                <div
-                                    class="overflow-scroll py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center gap-4">
-                                    <div class="flex flex-col gap-2 justify-center items-center">
-                                        <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
-                                                    class="font-semibold text-sm">30</span></h4>
-                                        </div>
-                                        <div class="flex items-center gap-1">
-                                            <h2 class="text-xl text-gray-500">9</h2>
-                                        </div>
-                                    </div>
-                                    <div class="border-l h-full"></div>
-                                    <div class="flex flex-col gap-2 justify-center items-center">
-                                        <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Keywords in top <span
-                                                    class="font-semibold text-sm">100</span></h4>
-                                        </div>
-                                        <div class="flex items-center gap-1">
-                                            <h2 class="text-xl text-gray-500">17</h2>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 8 -->
-                                <div
-                                    class="py-7 px-6 col-span-1 bg-white rounded-lg shadow flex justify-between items-center">
-                                    <div class="flex flex-col gap-2 justify-center items-center">
-                                        <div>
-                                            <h4 class="text-gray-500 text-xs font-light">Not ranked</h4>
-                                        </div>
-                                        <div class="relative flex items-center gap-1">
-                                            <h2 class="text-3xl text-gray-500">7</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+
+                        <!-- Chart -->
+                        <div class="grid grid-cols-2 col-span-2 gap-5">
+                            <div class="col-span-2 -ml-3 mt-5">
+                                <h3 class="text-kwr-orange">Website Score</h3>
+                            </div>
+                            <img class="h-52 object-cover col-span-2 shadow rounded" src="/src/assets/chart.png" alt="">
+                        </div>
+
                     </div>
                 </div>
 
