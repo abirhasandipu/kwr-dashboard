@@ -2404,6 +2404,14 @@ body {
 }
 
 @media (max-width: 1279.98px) {
+  .small-laptop\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .small-laptop\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .small-laptop\:hidden {
     display: none;
   }
@@ -2592,6 +2600,11 @@ body {
 }
 
 @media (max-width: 640.98px) {
+  .wide-mobile\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .wide-mobile\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2602,6 +2615,16 @@ body {
 
   .wide-mobile\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .wide-mobile\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .wide-mobile\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .wide-mobile\:text-base {
