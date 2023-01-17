@@ -106,62 +106,66 @@
                     </div>
                     <div class="flex gap-5 mx-8 mt-5 items-center">
                         <a class="bg-white rounded-lg text-gray-500 border border-gray-300 flex items-center gap-3 px-4 py-1"
-                            href=""><i class="fa-solid fa-arrow-left"></i> <span>Back</span></a>
-                        <h2 class="text-kwr-orange text-2xl">Rank Tracking</h2>
+                            href=""><i class="fa-solid fa-arrow-left"></i> <span class="tablet:text-sm">Back</span></a>
+                        <h2 class="text-kwr-orange text-2xl tablet:text-base">Rank Tracking</h2>
                     </div>
+
+
                     <!-- top section -->
-                    <div class="bg-gray-50 grid grid-cols-10 gap-5 px-8 py-5">
+                    <div
+                        class="bg-gray-50 grid grid-cols-10 small-laptop:grid-cols-7 tablet:grid-cols-6 wide-mobile:grid-cols-3 gap-5 px-8 py-5">
                         <!-- big 2 -->
                         <div
                             class="py-3 px-6 col-span-2 small-laptop:col-span-3 bg-white rounded-lg shadow flex justify-between items-center">
                             <div class="flex flex-col gap-1">
                                 <h3 class="text-gray-500">Campaigns</h3>
-                                <h2 class="text-3xl text-gray-500">28</h2>
+                                <h2 class="text-3xl wide-mobile:text-2xl text-gray-500">28</h2>
                             </div>
                             <div>
-                                <i class="text-5xl text-yellow-400 fa-solid fa-folder"></i>
+                                <i class="text-5xl wide-mobile:text-4xl text-yellow-400 fa-solid fa-folder"></i>
                             </div>
                         </div>
+
                         <div
                             class="py-3 px-6 col-span-2 small-laptop:col-span-3 bg-white rounded-lg shadow flex justify-between items-center">
                             <div class="flex flex-col gap-1">
                                 <h3 class="text-gray-500">Keywords</h3>
-                                <h2 class="text-3xl text-gray-500">134</h2>
+                                <h2 class="text-3xl wide-mobile:text-2xl text-gray-500">134</h2>
                             </div>
                             <div>
-                                <i class="text-5xl text-kwr-red fa-solid fa-bullseye"></i>
+                                <i class="text-5xl wide-mobile:text-4xl text-kwr-red fa-solid fa-bullseye"></i>
                             </div>
                         </div>
-                        <!-- small 3 -->
+                        <!-- small boxes 3 -->
                         <div
-                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
+                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 wide-mobile:col-span-3 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
                             <div>
                                 <h4 class="text-gray-500 text-xs font-light">Keyword moved up</h4>
                             </div>
                             <div class="flex items-center gap-1">
-                                <h2 class="text-3xl text-gray-500">30</h2>
+                                <h2 class="text-3xl wide-mobile:text-2xl text-gray-500">30</h2>
                                 <i class="text-lg text-green-400 fa-solid fa-arrow-up"></i>
                             </div>
                         </div>
 
                         <div
-                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
+                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 wide-mobile:col-span-3 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
                             <div>
                                 <h4 class="text-gray-500 text-xs font-light">Keyword without change</h4>
                             </div>
                             <div class="flex items-center gap-1">
-                                <h2 class="text-3xl text-gray-500">78</h2>
+                                <h2 class="text-3xl wide-mobile:text-2xl text-gray-500">78</h2>
                                 <i class="text-lg text-yellow-400 fa-solid fa-arrows-up-down"></i>
                             </div>
                         </div>
 
                         <div
-                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
+                            class="py-3 px-6 col-span-1 small-laptop:col-span-2 wide-mobile:col-span-3 bg-white rounded-lg shadow flex flex-col gap-2 justify-center">
                             <div>
                                 <h4 class="text-gray-500 text-xs font-light">Keyword moved down</h4>
                             </div>
                             <div class="flex items-center gap-1">
-                                <h2 class="text-3xl text-gray-500">30</h2>
+                                <h2 class="text-3xl wide-mobile:text-2xl text-gray-500">30</h2>
                                 <i class="text-lg text-red-400 fa-solid fa-arrow-down"></i>
                             </div>
                         </div>
@@ -169,19 +173,20 @@
 
                     </div>
 
-                    <!-- features -->
-                    <div class="px-8 py-5">
+                    <!-- create new and camapaigns table -->
+                    <div class="px-8 tablet:px-2 py-5">
 
                         <!-- Form -->
-                        <div class="bg-white py-5 pl-5 rounded-md shadow w-[60%] pr-20">
+                        <div
+                            class="bg-white py-5 pl-5 rounded-md shadow w-[60%] small-laptop:w-[80%] wide-tablet:w-full pr-20 tablet:pr-5">
                             <h3 class="mb-5 text-kwr-orange">Create new</h3>
-                            <p class="text-xs text-gray-400 mb-4 font-light w-[90%]">
+                            <p class="text-xs text-gray-400 mb-4 font-light w-[90%] wide-mobile:w-full">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, officia id quod ea
                                 quos assumenda eius soluta sapiente recusandae nihil facere. Blanditiis temporibus
                                 culpa corrupti ducimus laboriosam ex impedit!
                             </p>
 
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-2 wide-mobile:grid-cols-1 gap-5 wide-mobile:gap-0">
                                 <div>
                                     <div class="mb-6 gap-10 gap-y-5">
                                         <div class="relative z-0 col-span-1">
@@ -226,7 +231,7 @@
                             <div class="flex gap-5 mt-10 justify-end">
                                 <a class="hidden bg-gray-50 text-gray-500 border border-gray-300 hover:bg-gray-100 active:bg-gray-50 transition-all ease-in-out py-2 px-4 rounded-lg flex items-center"
                                     href="/src/index.html"> <i class="text-xs mr-2 fa-solid fa-less-than"></i> Back</a>
-                                <a class="bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red text-white py-2 px-4 rounded-lg flex items-center gap-2"
+                                <a class="bg-kwr-red hover:bg-kwr-red-77 active:bg-kwr-red text-white py-2 px-4 rounded-lg flex items-center gap-2 tablet:text-sm"
                                     href="/src/onpageseo1.html" href="#"><i class="fa-solid fa-rocket"></i> Start
                                     Tracking</a>
                             </div>
@@ -237,8 +242,8 @@
 
             </div>
             <!-- table -->
-            <div class="mx-8 mb-5 rounded-md shadow">
-                <div class="bg-white p-8 rounded-md w-full">
+            <div class="mx-8 tablet:mx-2 mb-5 rounded-md shadow">
+                <div class="bg-white p-8 tablet:p-2 rounded-md w-full">
                     <div class="flex items-center justify-between pb-6 flex-wrap">
                         <div>
                             <h2 class="text-kwr-orange font-medium">Campaigns</h2>
