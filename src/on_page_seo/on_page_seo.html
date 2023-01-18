@@ -194,7 +194,13 @@
                                                 class="px-2 mx-3 z-10 bg-white absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-orange-300  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                                 Lorem ipsum</label>
                                         </div>
+                                        <p class="text-xs mt-1 text-gray-400 font-light">Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit.
+                                            Hic,
+                                            est!</p>
                                     </div>
+
                                     <div class="mb-6 gap-10 gap-y-5">
                                         <div class="relative z-0 col-span-1">
                                             <input type="text" id="default_standard"
@@ -204,21 +210,30 @@
                                                 class="px-2 mx-3 z-10 bg-white absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-orange-300  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                                 Lorem ipsum</label>
                                         </div>
+                                        <p class="text-xs mt-1 text-gray-400 font-light">Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit.
+                                            Hic,
+                                            est!</p>
                                     </div>
+
                                     <div class="mb-6 gap-10 gap-y-5">
-                                        <div class="relative z-0 col-span-1">
-                                            <input type="text" id="default_standard"
-                                                class="block py-2.5 px-3 w-full text-sm text-gray-600 rounded-lg bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-orange-300 peer"
-                                                placeholder=" " />
-                                            <label for="default_standard"
-                                                class="px-2 mx-3 z-10 bg-white absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-orange-300  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                                                Lorem ipsum</label>
+                                        <div class="relative flex items-center gap-4 col-span-1">
+                                            <span class="text-sm text-gray-500">Toggle</span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                                                </div>
+                                            </label>
+
                                         </div>
                                     </div>
+
                                 </div>
                                 <!-- textarea -->
                                 <div>
-                                    <label for="message" class="block mb-2 text-sms text-gray-500">Label</label>
+                                    <label for="message" class="block mb-2 text-sm text-gray-500">Label</label>
                                     <textarea id="message" rows="4"
                                         class="block bg-white p-2.5 w-full text-sm text-gray-900 rounded-lg border-2 border-gray-300 focus:ring-kwr-orange focus:border-kwr-orange"
                                         placeholder="Placeholder..."></textarea>
